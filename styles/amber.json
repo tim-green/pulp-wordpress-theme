@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Amber",
+	"description":  "Amber based palette with four shades",
+	"settings": {
+		"color": {
+			"palette": [
+				
+			]
+		}
+	}
+}
