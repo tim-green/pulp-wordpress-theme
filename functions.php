@@ -88,3 +88,16 @@ function pulp_register_block_styles() {
 }
 add_action( 'init', 'pulp_register_block_styles' );
 
+/**
+ * Register pattern category.
+ */
+function pulp_register_pattern_category( $slug, $label, $description ) {
+	register_block_pattern_category(
+		'pulp-' . $slug,
+		array(
+			'label'       => __( $label, 'pulp' ),
+			'description' => __( $description, 'pulp' ),
+		)
+	);
+}
+
