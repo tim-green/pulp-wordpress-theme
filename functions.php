@@ -45,5 +45,46 @@ function pulp_enqueue_stylesheet_script() {
 }
 add_action( 'wp_enqueue_scripts', 'pulp_enqueue_stylesheet_script' );
 
+/**
+ * Register block styles.
+ */
+function pulp_register_block_styles() {
 
+	$block_styles = array(
+		'core/columns' => array(
+			'column-reverse' => __( 'Reverse', 'pulp' ),
+		),
+		'core/cover' => array(
+			'gradient' => __( 'Gradient', 'pulp' )
+		),
+		'core/group' => array(
+			'shadow-faint' => __( 'Shadow (Faint)', 'pulp' ),
+			'shadow-light' => __( 'Shadow (Light)', 'pulp' ),
+			'shadow-solid' => __( 'Shadow (Solid)', 'pulp' ),
+		),
+		'core/list' => array(
+			'no-style' => __( 'No Style', 'pulp' ),
+		),
+		'core/navigation-link' => array(
+			'underline' => __( 'Underline', 'pulp' )
+		),
+		'core/social-links' => array(
+			'outline' => __( 'Outline', 'pulp' ),
+		),
+	);
+
+	foreach ( $block_styles as $block => $styles ) {
+		foreach ( $styles as $style_name => $style_label ) {
+			register_block_style(
+				$block,
+				array(
+					'name'  => $style_name,
+					'label' => $style_label,
+				)
+			);
+		}
+	}
+
+}
+add_action( 'init', 'pulp_register_block_styles' );
 
