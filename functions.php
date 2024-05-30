@@ -8,42 +8,42 @@
 
 //$theme_version = '1.0.0';
 
-/* Theme Setup */
-require_once get_template_directory() . '/inc/setup.php'; 
+if ( ! function_exists( 'pulp_setup' ) ) {
 
-/* Include CSS & JavaScript */
-require_once get_template_directory() . '/inc/enqueues.php'; 
+	/**
+	 * Initialize theme defaults and add support for WordPress features.
+	 */
+	function pulp_setup() {
 
-/* Register navmenus */
-require_once get_template_directory() . '/inc/navmenus.php'; 
+		// Enqueue editor stylesheet.
+		add_editor_style( get_template_directory_uri() . '/editor-style.css' );
 
-/* Register sidebars */
-require_once get_template_directory() . '/inc/sidebars.php'; 
+		// Disable core block inline styles.
+		add_filter( 'should_load_separate_core_block_assets', '__return_false' );
 
-/* Nav Walker */
-require_once get_template_directory() . '/inc/lib/class-wp-bootstrap-navwalker.php'; 
+		// Remove core block patterns.
+		remove_theme_support( 'core-block-patterns' );
 
-/* Register Custom Post Types & Taxonomies */
-foreach ( glob( get_template_directory() . '/inc/cpt/*.php' ) as $cpt ) {
-	require_once $cpt;
-}; 
+		// Include admin notice.
+		require_once get_template_directory() . '/inc/admin-notices.php';	
 
-/* Various global functions */
-require_once get_template_directory() . '/inc/global.php'; 
+	}
+}
+add_action( 'after_setup_theme', 'pulp_setup' );
 
-/* ACF integration */
-require_once get_template_directory() . '/inc/integrations/acf.php'; 
+/**
+ * Enqueue theme stylesheet and script.
+ */
+function pulp_enqueue_stylesheet_script() {
 
-/* Contact Form 7 integration */
-// require_once get_template_directory() . '/inc/integrations/cf7.php'; 
+	// Enqueue theme stylesheet.
+	wp_enqueue_style( 'pulp', get_template_directory_uri() . 'build/app.min.css', array(), wp_get_theme( 'pulp' )->get( 'Version' ) );
 
-/* Search results filter */
-// require_once get_template_directory() . '/inc/searchfilter.php'; 
+	// Enqueue theme script.
+	wp_enqueue_script( 'pulp', get_template_directory_uri() . '/build/app.min.js', array('jquery'), '1.0', true );
 
-/* Cleanup */
-require_once get_template_directory() . '/inc/cleanup.php'; 
+}
+add_action( 'wp_enqueue_scripts', 'pulp_enqueue_stylesheet_script' );
 
-/* Custom user functions */
-require_once get_template_directory() . '/inc/custom.php'; 
 
 
