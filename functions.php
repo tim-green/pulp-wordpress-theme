@@ -101,3 +101,24 @@ function pulp_register_pattern_category( $slug, $label, $description ) {
 	);
 }
 
+/**
+ * Register pattern categories.
+ */
+function pulp_register_pattern_categories() {
+	$categories = array(
+		'call-to-action' => array( __( 'Call to Action', 'pulp' ), __( 'A collection of call to action patterns for Pulp.', 'pulp' ) ),
+		'content'        => array( __( 'Content', 'pulp' ), __( 'A collection of content patterns for Pulp.', 'pulp' ) ),
+		'gallery'        => array( __( 'Gallery', 'pulp' ), __( 'A collection of gallery patterns for Pulp.', 'pulp' ) ),
+		'hero'           => array( __( 'Hero', 'pulp' ), __( 'A collection of hero patterns for Pulp.', 'pulp' ) ),
+		'pricing'        => array( __( 'Pricing', 'pulp' ), __( 'A collection of pricing patterns for Pulp.', 'pulp' ) ),
+		'team'           => array( __( 'Team', 'pulp' ), __( 'A collection of team patterns for Pulp.', 'pulp' ) ),
+		'template'       => array( __( 'Template', 'pulp' ), __( 'A collection of template patterns for Pulp.', 'pulp' ) ),
+		'testimonials'   => array( __( 'Testimonials', 'pulp' ), __( 'A collection of testimonials patterns for Pulp.', 'pulp' ) ),
+		'theme'          => array( __( 'Theme', 'pulp' ), __( 'A collection of theme patterns for Pulp.', 'pulp' ) ),
+	);
+
+	foreach ( $categories as $slug => $details ) {
+		pulp_register_pattern_category( $slug, $details[0], $details[1] );
+	}
+}
+add_action( 'init', 'pulp_register_pattern_categories' );
