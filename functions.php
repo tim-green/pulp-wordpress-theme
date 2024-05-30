@@ -1,8 +1,9 @@
 <?php
 
 /**
- *  GroundCTRL Framework 
+ *  Functions for Pulp 
  *  https://developer.wordpress.org/themes/basics/theme-functions/
+ * @package Pulp
  */
 
 //$theme_version = '1.0.0';
