@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Purple",
+	"description":  "Purple based palette with four shades",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#7116c0", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#0a0a0a",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#7116c0",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#b273ee",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#e6ceff",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#ede6f4",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
