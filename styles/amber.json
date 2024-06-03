@@ -5,8 +5,49 @@
 	"description":  "Amber based palette with four shades",
 	"settings": {
 		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#d36e21", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
 			"palette": [
-				
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#d36e21",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#fcaf2c",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#ffdd6d",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#efe7c8",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
 			]
 		}
 	}
