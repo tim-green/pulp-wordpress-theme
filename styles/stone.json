@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Stone",
+	"description":  "Stone-based palette with four shades",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#514F4C",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#84817F",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#CBCBCB",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
