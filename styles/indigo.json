@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Indigo",
+	"description":  "Indigo-based palette with four shades",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#15803d", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#4234E6",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#8A8CFF",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#B7C1F2",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#EBEEF9",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
