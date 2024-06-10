@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Rose",
+	"description":  "Rose-based palette with four shades",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#B6163E", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#C81240",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#F04662",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#F6A8B1",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#F6DCDE",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
