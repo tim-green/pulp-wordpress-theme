@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Teal",
+	"description":  "Teal-based palette with four shades",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#0B6D65", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#0B6D65",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#28C1AF",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#58F5DD",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#B9F6E9",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
