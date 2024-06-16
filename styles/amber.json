@@ -8,11 +8,6 @@
 			"duotone": [
 				{
 					"colors": [ "#181818", "#f3f3f3" ],
-					"name": "Black and White",
-					"slug": "black-and-white"
-				},
-				{
-					"colors": [ "#d36e21", "#f3f3f3" ],
 					"name": "Primary and White",
 					"slug": "primary-and-white"
 				}
