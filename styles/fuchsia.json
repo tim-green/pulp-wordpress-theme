@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Fuchsia",
+	"description":  "Fuchsia-based palette with four shades",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [ "#181818", "#f3f3f3" ],
+					"name": "Black and White",
+					"slug": "black-and-white"
+				},
+				{
+					"colors": [ "#9813A4", "#f3f3f3" ],
+					"name": "Primary and White",
+					"slug": "primary-and-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#AB20B8",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#E241FB",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#F3B6FD",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#F9EAFD",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
