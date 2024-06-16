@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Gray",
+	"description":  "Gray-based palette with four shades",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#353D4A",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#6D7380",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#D9DBDE",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#EFF0F1",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
