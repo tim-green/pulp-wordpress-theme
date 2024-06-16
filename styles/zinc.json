@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Zinc",
+	"description":  "Zinc-based palette with four shades",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f3f3f3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#181818",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#363644",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#5D5D71",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#BEBED6",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#E5E5EF",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				}
+			]
+		}
+	}
+}
