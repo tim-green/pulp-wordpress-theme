@@ -34,10 +34,10 @@ add_action( 'after_setup_theme', 'pulp_setup' );
 function pulp_enqueue_stylesheet_script() {
 
 	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'pulp', get_template_directory_uri() . 'build/app.min.css', array(), wp_get_theme( 'pulp' )->get( 'Version' ) );
+	wp_enqueue_style( 'pulp', get_template_directory_uri() . 'assets/css/app.min.css', array(), wp_get_theme( 'pulp' )->get( 'Version' ) );
 
 	// Enqueue theme script.
-	wp_enqueue_script( 'pulp', get_template_directory_uri() . '/build/app.min.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'pulp', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '1.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'pulp_enqueue_stylesheet_script' );
@@ -119,3 +119,4 @@ function pulp_register_pattern_categories() {
 	}
 }
 add_action( 'init', 'pulp_register_pattern_categories' );
+
